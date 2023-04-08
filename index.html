@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Windows 7</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="window" id="notepad">
+      <div class="title" id="notepadheader">
+        <img
+          src="http://icons.iconarchive.com/icons/tonev/windows-7/256/windows-7-editor-icon.png"
+          class="icon"
+        />
+        Notepad
+        <div class="buttons">
+          <a href="#" onclick="return false" class="minimize-button button">
+            <div class="minimize-icon"></div>
+          </a>
+          <a href="#" onclick="return false" class="maximize-button button">
+            <div class="maximize-icon"></div>
+          </a>
+          <a href="#" onclick="return false" class="close-button button">
+            <div class="close-icon"></div>
+          </a>
+        </div>
+      </div>
+
+      <textarea class="notepad-textedit body">hello</textarea>
+    </div>
+
+    <div id="task-bar">
+      <div id="blur-overlay"></div>
+      <div id="datetime">
+        <span class="time"></span>
+        <span class="date"></span>
+      </div>
+      <div id="show-desktop"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./taskbar.js"></script>
+  </body>
+</html>
